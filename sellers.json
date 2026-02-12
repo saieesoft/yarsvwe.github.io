@@ -1,0 +1,20 @@
+{
+  "contact_email": "saieesoft@duck.com",
+  "contact_address": "Warsaw, Mazovia, Poland",
+  "version": "1.0",
+  "identifiers": [
+    {
+      "name": "TAG-ID",
+      "value": "saieesoft.github.io"
+    }
+  ],
+  "sellers": [
+    {
+      "seller_id": "pub-8817770617748391",
+      "seller_type": "PUBLISHER",
+      "is_confidential": 0,
+      "name": "Exolute",
+      "domain": "saieesoft.github.io"
+    }
+  ]
+}
