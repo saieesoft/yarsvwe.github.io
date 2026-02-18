@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark">
-    <meta name="darkreader-lock" content="dark">
-    <meta http-equiv="refresh" content="4; url=/homepage.html" />
+    <meta name="darkreader-lock" content="true">
+    <meta http-equiv="refresh" content="4; url=/homepage.html">
     <title>Redirecting...</title>
     <style>
         body {
@@ -20,7 +20,6 @@
             color: #e2e8f0;
             overflow: hidden;
         }
-
         body::before {
             content: '';
             position: absolute;
@@ -30,7 +29,6 @@
             animation: pulseBackground 10s ease-in-out infinite alternate;
             z-index: -1;
         }
-
         .card {
             background: rgba(20, 25, 40, 0.7);
             backdrop-filter: blur(20px) saturate(180%);
@@ -45,7 +43,6 @@
             position: relative;
             overflow: hidden;
         }
-
         h1 {
             font-size: 26px;
             margin-bottom: 15px;
@@ -55,7 +52,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         p {
             color: #94a3b8;
             font-size: 15px;
@@ -63,40 +59,34 @@
             margin-bottom: 20px;
             font-weight: 500;
         }
-
         a {
             color: #a78bfa;
             text-decoration: underline;
             font-weight: 700;
             transition: color 0.3s ease, text-shadow 0.3s ease;
         }
-
         a:hover {
             color: #c4b5fd;
             text-shadow: 0 0 8px rgba(167, 139, 250, 0.5);
         }
-
         .loader {
             position: relative;
             width: 60px;
             height: 60px;
             margin: 0 auto 35px auto;
         }
-
         .loader::before, .loader::after {
             content: '';
             position: absolute;
             border-radius: 50%;
             animation: pulseLoader 2s linear infinite;
         }
-
         .loader::before {
             width: 100%;
             height: 100%;
             background: rgba(102, 126, 234, 0.2);
             animation-delay: -0.5s;
         }
-        
         .loader::after {
             width: 70%;
             height: 70%;
@@ -104,13 +94,11 @@
             left: 15%;
             background: rgba(167, 139, 250, 0.4);
         }
-
         @keyframes pulseLoader {
             0% { transform: scale(0.8); opacity: 0.5; }
             50% { transform: scale(1); opacity: 1; }
             100% { transform: scale(0.8); opacity: 0.5; }
         }
-
         @keyframes pulseBackground {
             0% { opacity: 0.3; transform: scale(1); }
             100% { opacity: 0.7; transform: scale(1.1); }
