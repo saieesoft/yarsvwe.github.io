@@ -4,7 +4,7 @@ Welcome! This repository is used to host our website via GitHub Pages. 🚀
 
 ## 🌐 Website
 
-**[👉 Click here to visit our website](https://saieesoft.github.io/homepage.html)**
+**[👉 Click here to visit our website](https://saieesoft.github.io/)**
 
 ## 🤝 Contact
 
