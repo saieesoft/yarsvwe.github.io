@@ -10,7 +10,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="saieesoft_logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="saieesoft_logo.png">
     <link rel="apple-touch-icon" sizes="180x180" href="saieesoft_logo.png">
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
         
@@ -252,7 +251,6 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
-        /* Dark Theme Styles */
         body.dark {
             --dark: #f8fafc;
             --light: #1e293b;
@@ -298,20 +296,16 @@
         .dark .from-indigo-100 { --tw-gradient-from: #312e81 !important; }
         .dark .to-indigo-200 { --tw-gradient-to: #3730a3 !important; }
         
-        /* Theme Icon Toggle */
         .theme-icon-dark { display: none; }
         .theme-icon-light { display: block; }
         .dark .theme-icon-light { display: none; }
         .dark .theme-icon-dark { display: block; }
-
     </style>
 </head>
 <body class="relative">
-    <!-- Background blobs -->
     <div class="shape-blob one"></div>
     <div class="shape-blob two"></div>
     
-    <!-- Header -->
     <header class="gradient-bg text-white fixed w-full z-50 shadow-lg">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
@@ -343,7 +337,6 @@
                 </button>
             </div>
             
-            <!-- Mobile Menu -->
             <div id="mobileMenu" class="mobile-menu md:hidden">
                 <div class="flex flex-col space-y-4 py-4">
                     <a href="#" class="nav-link block" data-translate="home">Home</a>
@@ -367,7 +360,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="gradient-bg text-white pt-32 pb-20 relative overflow-hidden">
         <div class="container mx-auto px-4 text-center relative z-10">
             <div class="max-w-4xl mx-auto">
@@ -393,7 +385,6 @@
         <div class="absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-64 h-64 rounded-full bg-indigo-400 opacity-10 blur-3xl"></div>
     </section>
 
-    <!-- Stats Section -->
     <section class="py-12 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -417,7 +408,6 @@
         </div>
     </section>
 
-    <!-- Apps Section -->
     <section id="apps" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -428,7 +418,6 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Exolute Converter -->
                 <div class="app-card bg-white rounded-xl overflow-hidden shadow-md relative">
                     <div class="h-56 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center relative">
                         <div class="absolute inset-0 bg-gradient-to-t from-blue-500 to-transparent opacity-10"></div>
@@ -451,7 +440,6 @@
                     </div>
                 </div>
                 
-                <!-- Daily.box -->
                 <div class="app-card bg-white rounded-xl overflow-hidden shadow-md relative">
                     <div class="h-56 bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center">
                         <div class="absolute inset-0 bg-gradient-to-t from-purple-500 to-transparent opacity-10"></div>
@@ -473,7 +461,6 @@
                     </div>
                 </div>
                 
-                <!-- AskAnonymousBot -->
                 <div class="app-card bg-white rounded-xl overflow-hidden shadow-md relative">
                     <div class="h-56 bg-gradient-to-br from-pink-50 to-pink-100 flex items-center justify-center">
                         <div class="absolute inset-0 bg-gradient-to-t from-pink-500 to-transparent opacity-10"></div>
@@ -504,7 +491,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="flex flex-col lg:flex-row items-center gap-12">
@@ -585,7 +571,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -671,7 +656,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gradient-to-br from-indigo-600 to-indigo-800 text-white">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
@@ -744,7 +728,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
@@ -787,28 +770,20 @@
     </footer>
 
     <script>
-        // Translations
         const translations = {
             en: {
-                // Navigation
                 "home": "Home",
                 "apps": "My Apps",
                 "about": "About Me",
                 "contact": "Contact",
                 "toggleTheme": "Change Theme",
-                
-                // Hero section
                 "title": "Crafting Digital Experiences",
                 "slogan": "Innovative mobile solutions designed with passion and precision to elevate your daily life.",
                 "viewWorks": "Explore Apps",
-                
-                // Stats section
                 "projects": "Successful Projects",
                 "clients": "Positive Reviews",
                 "years": "Years Experience",
                 "passion": "Passion Driven",
-                
-                // Apps section
                 "appsTitle": "Featured Applications",
                 "appsSubtitle": "Innovative solutions designed to simplify and enhance your daily life",
                 "exoluteDesc": "Ultimate currency converter with real-time exchange rates and conversion history.",
@@ -828,16 +803,12 @@
                 "habits": "Habits",
                 "learning": "Learning",
                 "viewAll": "View All Projects",
-                
-                // About section
                 "aboutTitle": "About Me",
                 "aboutText1": "I'm a passionate full-stack developer with over 2 years of experience creating modern, intuitive applications. My mission is to bridge the gap between complex technology and seamless user experiences.",
                 "aboutText2": "Every app I develop is crafted with attention to detail, performance, and aesthetics. I believe in creating solutions that not only solve problems but also delight users with their simplicity and elegance.",
                 "techStack": "Technologies I Work With",
                 "contactMe": "Contact Me",
                 "yearsExp": "Years Experience",
-                
-                // Testimonials
                 "testimonials": "What Users Say",
                 "testimonialsSub": "Feedback from people who use my applications",
                 "testimonial1": "\"Exolute Converter has completely changed how I handle foreign currencies. The interface is so intuitive and the real-time rates are incredibly accurate.\"",
@@ -846,8 +817,6 @@
                 "user1": "Frequent Traveler",
                 "user2": "Freelance Designer",
                 "user3": "University Student",
-                
-                // Contact section
                 "contactTitle": "Get In Touch",
                 "contactSub": "Have a project in mind or want to collaborate? I'd love to hear from you!",
                 "yourName": "Your Name",
@@ -856,31 +825,22 @@
                 "contactInfo": "Contact Information",
                 "emailTitle": "Email",
                 "devPage": "https://play.google.com/store/apps/dev?id=6446780682856756622",
-                
-                // Footer
                 "footerText": "Creating innovative digital solutions that make life easier and more productive.",
                 "copyright": "© 2026 SaieeSoft. All rights reserved."
             },
             ru: {
-                // Navigation
                 "home": "Главная",
                 "apps": "Мои приложения",
                 "about": "Обо мне",
                 "contact": "Контакты",
                 "toggleTheme": "Сменить тему",
-                
-                // Hero section
                 "title": "Создаем цифровые решения",
                 "slogan": "Инновационные мобильные приложения, разработанные с страстью и точностью для улучшения вашей повседневной жизни.",
                 "viewWorks": "Смотреть приложения",
-                
-                // Stats section
                 "projects": "Успешных проектов",
                 "clients": "Положительных отзывов",
                 "years": "Года опыта",
                 "passion": "Страсть к делу",
-                
-                // Apps section
                 "appsTitle": "Наши приложения",
                 "appsSubtitle": "Инновационные решения, созданные для упрощения и улучшения вашей повседневной жизни",
                 "exoluteDesc": "Мощный конвертер валют с актуальными курсами и историей конвертаций.",
@@ -900,16 +860,12 @@
                 "habits": "Привычки",
                 "learning": "Обучение",
                 "viewAll": "Все проекты",
-                
-                // About section
                 "aboutTitle": "Обо мне",
                 "aboutText1": "Я страстный full-stack разработчик с более чем 2-летним опытом создания современных, интуитивно понятных приложений. Моя миссия - соединить сложные технологии с бесшовным пользовательским опытом.",
                 "aboutText2": "Каждое приложение, которое я разрабатываю, создается с вниманием к деталям, производительности и эстетике. Я верю в создание решений, которые не только решают проблемы, но и радуют пользователей своей простотой и элегантностью.",
                 "techStack": "Технологии, с которыми я работаю",
                 "contactMe": "Связаться со мной",
                 "yearsExp": "Года опыта",
-                
-                // Testimonials
                 "testimonials": "Отзывы пользователей",
                 "testimonialsSub": "Мнения людей, которые используют мои приложения",
                 "testimonial1": "\"Exolute Converter полностью изменил мой подход к иностранным валютам. Интерфейс настолько интуитивен, а курсы в реальном времени невероятно точны.\"",
@@ -918,8 +874,6 @@
                 "user1": "Частый путешественник",
                 "user2": "Фриланс-дизайнер",
                 "user3": "Студент университета",
-                
-                // Contact section
                 "contactTitle": "Свяжитесь со мной",
                 "contactSub": "Есть проект или хотите сотрудничать? Буду рад услышать от вас!",
                 "yourName": "Ваше имя",
@@ -928,31 +882,22 @@
                 "contactInfo": "Контактная информация",
                 "emailTitle": "Email",
                 "devPage": "Страница разработчика",
-                
-                // Footer
                 "footerText": "Создаем инновационные цифровые решения, которые делают жизнь проще и продуктивнее.",
                 "copyright": "© 2026 SaieeSoft. Все права защищены."
             },
             ua: {
-                // Navigation
                 "home": "Головна",
                 "apps": "Мої додатки",
                 "about": "Про мене",
                 "contact": "Контакти",
                 "toggleTheme": "Змінити тему",
-                
-                // Hero section
                 "title": "Створюємо цифрові рішення",
                 "slogan": "Інноваційні мобільні програми, розроблені з пристрастю та точністю для покращення вашого повсякденного життя.",
                 "viewWorks": "Переглянути додатки",
-                
-                // Stats section
                 "projects": "Успішних проектів",
                 "clients": "Позитивних відгуків",
                 "years": "Роки досвіду",
                 "passion": "Пристрасть до справи",
-                
-                // Apps section
                 "appsTitle": "Наші додатки",
                 "appsSubtitle": "Інноваційні рішення, створені для спрощення та покращення вашого повсякденного життя",
                 "exoluteDesc": "Потужний конвертер валют з актуальними курсами та історією конвертацій.",
@@ -962,7 +907,7 @@
                 "telegram": "Telegram",
                 "privacy": "Конфіденційність",
                 "tryBot": "Спробувати бота",
-                "finance": "Фінанси",
+                "finance": "Фінансы",
                 "productivity": "Продуктивність",
                 "education": "Освіта",
                 "android": "Android",
@@ -972,16 +917,12 @@
                 "habits": "Звички",
                 "learning": "Навчання",
                 "viewAll": "Всі проекти",
-                
-                // About section
                 "aboutTitle": "Про мене",
                 "aboutText1": "Я пристрасний full-stack розробник з більш ніж 2-річним досвідом створення сучасних, інтуїтивно зрозумілих додатків. Моя місія - поєднати складні технології з безшовним користувацьким досвідом.",
                 "aboutText2": "Кожен додаток, який я розробляю, створюється з увагою до деталей, продуктивності та естетики. Я вірю в створення рішень, які не лише вирішують проблеми, але й радують користувачів своєю простотою та елегантністю.",
                 "techStack": "Технології, з якими я працюю",
                 "contactMe": "Зв'язатися зі мною",
                 "yearsExp": "Роки досвіду",
-                
-                // Testimonials
                 "testimonials": "Відгуки користувачів",
                 "testimonialsSub": "Думки людей, які використовують мої додатки",
                 "testimonial1": "\"Exolute Converter повністю змінив мій підхід до іноземних валют. Інтерфейс настільки інтуїтивний, а курси в реальному часі неймовірно точні.\"",
@@ -990,8 +931,6 @@
                 "user1": "Частий мандрівник",
                 "user2": "Фріланс-дизайнер",
                 "user3": "Студент університету",
-                
-                // Contact section
                 "contactTitle": "Зв'яжіться зі мною",
                 "contactSub": "Маєте проект або хочете співпрацювати? Буду радий почути від вас!",
                 "yourName": "Ваше ім'я",
@@ -1000,8 +939,6 @@
                 "contactInfo": "Контактна інформація",
                 "emailTitle": "Email",
                 "devPage": "https://play.google.com/store/apps/dev?id=6446780682856756622",
-                
-                // Footer
                 "footerText": "Створюємо інноваційні цифрові рішення, які роблять життя простішим і продуктивнішим.",
                 "copyright": "© 2026 SaieeSoft. Всі права захищені."
             }
@@ -1010,12 +947,10 @@
         let currentLang = 'en';
         const langButtons = document.querySelectorAll('.lang-btn');
 
-        // Mobile menu toggle
         document.getElementById('mobileMenuButton').addEventListener('click', function() {
             document.getElementById('mobileMenu').classList.toggle('open');
         });
 
-        // Language switching
         const setLanguage = (lang) => {
             currentLang = lang;
             document.documentElement.lang = lang;
@@ -1039,7 +974,6 @@
             });
         });
 
-        // Theme Switcher
         const themeToggleButtons = document.querySelectorAll('#theme-toggle, #theme-toggle-mobile');
         const body = document.body;
 
@@ -1061,14 +995,11 @@
             btn.addEventListener('click', toggleTheme);
         });
 
-
-        // Form submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const form = e.target;
             const formData = new FormData(form);
             
-            // Show loading state
             const submitBtn = form.querySelector('button[type="submit"]');
             const originalBtnText = submitBtn.innerHTML;
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
@@ -1083,16 +1014,13 @@
             })
             .then(response => {
                 if (response.ok) {
-                    // Show success message
                     const successMsg = document.createElement('div');
                     successMsg.className = 'mt-4 p-4 bg-green-100 text-green-700 rounded-lg';
                     successMsg.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Message sent successfully!';
                     form.appendChild(successMsg);
                     
-                    // Reset form
                     form.reset();
                     
-                    // Remove success message after 5 seconds
                     setTimeout(() => {
                         successMsg.remove();
                     }, 5000);
@@ -1107,19 +1035,16 @@
                 errorMsg.innerHTML = '<i class="fas fa-exclamation-circle mr-2"></i> There was a problem sending your message. Please try again later.';
                 form.appendChild(errorMsg);
                 
-                // Remove error message after 5 seconds
                 setTimeout(() => {
                     errorMsg.remove();
                 }, 5000);
             })
             .finally(() => {
-                // Reset button state
                 submitBtn.innerHTML = originalBtnText;
                 submitBtn.disabled = false;
             });
         });
 
-        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1128,10 +1053,8 @@
                 const targetElement = document.querySelector(targetId);
                 
                 if (targetElement) {
-                    // Close mobile menu if open
                     document.getElementById('mobileMenu').classList.remove('open');
                     
-                    // Scroll to target
                     targetElement.scrollIntoView({
                         behavior: 'smooth'
                     });
@@ -1139,7 +1062,6 @@
             });
         });
 
-        // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1
         };
@@ -1181,14 +1103,11 @@
         });
         
         document.addEventListener('DOMContentLoaded', function() {
-            // Set default language to English
             setLanguage('en');
 
-            // Apply saved theme
             const savedTheme = localStorage.getItem('saieesoft-theme') || 'dark';
             applyTheme(savedTheme);
             
-            // Add fade-in animation to elements
             const fadeElements = document.querySelectorAll('.fade-in');
             
             fadeElements.forEach((el, index) => {
